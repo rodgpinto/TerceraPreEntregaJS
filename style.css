@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+    background-color: rgb(128, 126, 126);
+    text-decoration: none;
+
+}
+
+#verOcultarInfo {
+    background-color: rgb(128, 126, 126);
+    border: none;
+    color: #292424;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.navBar>div>.inicio {
+    text-decoration: none;
+    color: #fff;
+}
+
+header>nav>.navLateral>a {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    background-color: rgb(100, 100, 100);
+
+
+}
+
+#inputNombre {
+    background-color: white;
+    width: 14%;
+    border-radius: 3px;
+}
+
+#buscar {
+    width: 4%;
+    border-radius: 4%;
+}
+
+#burgers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.burger {
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 2%;
+    border: 2px solid rgb(121, 119, 119);
+    margin: 5px;
+    background-color: rgb(134, 130, 130);
+}
+
+.burger>img {
+    width: 600px;
+    height: auto;
+    border-radius: 2%;
+
+}
+
+.burger>h3 {
+    color: #fff;
+}
+
+.burger>p {
+    color: aliceblue;
+}
+
+.burger>button {
+    border-radius: 2%;
+    border: none;
+    background-color: rgb(134, 130, 130);
+    color: rgba(255, 255, 0, 0.589);
+}
+
+#carrito {
+    width: 90%;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+#seccionCarrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.oculta {
+    display: none;
+}
+
+#totalPagar {
+    color: aliceblue;
+    font-size: large;
+}
+
+
+
+.redes {
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(100, 100, 100);
+}
+
+.redes>a {
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+}
+
+#copyright {
+    background-color: rgb(100, 100, 100);
+    color: aliceblue;
+    text-align: center;
+}
