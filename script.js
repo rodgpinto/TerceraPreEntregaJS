@@ -74,11 +74,20 @@ function principal(burgers) {
 
 }
 function finalizarCompra() {
-    localStorage.removeItem("carrito");
     renderizarCarrito();
+
     let mensajeCompra = document.getElementById("mensajeCompra");
-    mensajeCompra.innerText = "¡Compra finalizada! Gracias por tu compra.";
-    mensajeCompra.classList.remove("oculta");
+    if (localStorage.getItem("carrito") !== null) {
+        mensajeCompra.innerText = "¡Compra finalizada! Gracias por tu compra.";
+        mensajeCompra.classList.remove("oculta");
+        localStorage.removeItem("carrito");
+
+    } else {
+        mensajeCompra.innerText = "No has agregado nada al carrito";
+        mensajeCompra.classList.remove("oculta");
+        localStorage.removeItem("carrito");
+
+    }
 }
 
 function renderizarBurgers(burgers) {
